@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Component Dinamico</h2>
+    <hr>
+    
+    
+     Mi nombre es: <b> {{ nombre }} </b>
+    <br>
+    <button class="btn btn-warning mt-3" (click)="cambiarNombre()">Cambiar Nombre</button>
+    
+    <hr>
+    
+    <h3>Contador</h3>
+
+     <h2>{{ numero }}</h2>
+     <button class="btn btn-dark" (click)="Sumar()">Sumar + 1 </button>
+
+     <hr>
+
+     <ul>
+        <li *ngFor="let numbers of array">{{ numbers }}
+
+        </li>
+     </ul>
+     <button class="btn btn-primary" (click)="agregar()">Agregar numeros</button>
+
+
+</div>
+
+
